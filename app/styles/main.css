@@ -43,11 +43,11 @@ body {
   width: 100%;
 }
 
-.chatroom-list h3 {
+.chatroom-list a {
   color: rgb(210,210,200);
 }
 
-.chat-window {
+.chatroom-window {
   width: 75%;
   height: 100%
   position: absolute;
@@ -55,7 +55,7 @@ body {
   right: 0;
 }
 
-.chat-window .message-bar {
+.chatroom-window .message-bar {
   background-color: rgb(210,210,210);
   height: 3rem;
   position: absolute;
@@ -65,7 +65,7 @@ body {
 }
 
 /*Message Bar styles*/
-.send-button, #message-text {
+#send-button, #message-text {
   display: inline-block;
   height: inherit;
 }
@@ -74,16 +74,16 @@ body {
   width: 90%;
 }
 
-.send-button {
+#send-button {
   background-color: rgb(0,0,90);
   text-transform: uppercase;
   width: 10%;
   position: absolute;
   bottom: 0;
-  right:0; 
+  right:0;
 }
 
-.send-button p {
+#send-button p {
   color: white;
   text-align: center;
   position: relative;
