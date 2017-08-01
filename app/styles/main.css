@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-/* border: 2px solid red; */
+ /*border: 2px solid red;*/
 }
 body {
   font-family: Arial, sans-serif;
@@ -22,9 +22,21 @@ body {
 
 .navbar h1 {
   position: relative;
-  width: 100%;
   color: white;
+  width: auto;
   font-size: 2.25rem;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.chatroom-button {
+  background-color: rgb(200,200,200);
+  color: black;
+  padding: 0.5rem;
+  position: relative;
+  left: 0.75rem;
+  bottom: 0.5rem;
+  display: inline-block;
 }
 
 .chatroom-list {
@@ -41,4 +53,35 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.chat-window .container {
+  background-color: rgb(210,210,210);
+  height: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 75%;
+}
+
+/*Message Bar styles*/
+.send-button, .message-bar {
+  display: inline-block;
+}
+
+.message-bar {
+  width: 90%;
+}
+
+.send-button {
+  background-color: rgb(0,0,90);
+  text-transform: uppercase;
+  width: 10%;
+}
+
+.send-button p {
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: .65rem;
 }

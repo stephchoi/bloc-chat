@@ -1,14 +1,15 @@
 <nav class="navbar">
   <h1>Bloc Chat</h1>
-  <div class="chatroom-list">
-    <h3>Room 1</h3>
+  <div class="chatroom-button">New Chat</div>
+  <div class="chatroom-list" ng-repeat="room in home.rooms">
 
-    <h3>Room 2</h3>
-
-    <h3>Room 3</h3>
   </div>
 </nav>
 
 <div class="chat-window">
-  
+  <div class="container">
+    <div class="message-bar"></div>
+    <div class="send-button"><p>send</p></div>
+  </div>
+
 </div>
