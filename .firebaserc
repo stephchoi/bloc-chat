@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "bloc-chat-9a5b3"
+    "default": "bloc-chat-9a5b3",
+    "bloc-chat": "bloc-chat-9a5b3"
   }
 }
