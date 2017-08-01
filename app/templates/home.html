@@ -2,14 +2,14 @@
   <h1>Bloc Chat</h1>
   <div class="chatroom-button">New Chat</div>
   <div class="chatroom-list" ng-repeat="room in home.rooms">
-
+    <h3>{{room.$value}}</h3>
   </div>
 </nav>
 
 <div class="chat-window">
-  <div class="container">
-    <div class="message-bar"></div>
-    <div class="send-button"><p>send</p></div>
+  <div class="message-bar">
+    <input id="message-text" type="text" placeholder="Type Message Here"></div>
+    <button class="send-button"><p>send</p></div>
   </div>
 
 </div>
