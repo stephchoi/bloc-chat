@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
- /*border: 2px solid red;*/
+/*border: 2px solid red*/
 }
+
 body {
   font-family: Arial, sans-serif;
   font-size: 100%;
@@ -41,6 +42,7 @@ body {
 
 .chatroom-list {
   width: 100%;
+  padding: 1rem;
 }
 
 .chatroom-list a {
@@ -50,7 +52,7 @@ body {
 .chatroom-window {
   width: 75%;
   height: 100%
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
 }
@@ -58,7 +60,7 @@ body {
 .chatroom-window .message-bar {
   background-color: rgb(210,210,210);
   height: 3rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   width: 75%;
@@ -81,10 +83,5 @@ body {
   position: absolute;
   bottom: 0;
   right:0;
-}
-
-#send-button p {
   color: white;
-  text-align: center;
-  position: relative;
 }
