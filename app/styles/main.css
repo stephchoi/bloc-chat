@@ -85,3 +85,43 @@ body {
   right:0;
   color: white;
 }
+
+
+
+/*.form {
+  position: fixed;
+  top: 50px;
+  left: 40%;
+  background-color: rgb(210,210,210);
+  color: rgb(110,110,110);
+  height: auto;
+  width: auto;
+  padding: 25px 40px 25px 40px;
+  z-index: 1;
+}
+
+.form h3 {
+  color: rgb(60,60,60);
+}
+
+#new-room-name {
+  width: 250px;
+  height: 35px;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.form-button {
+  width: 49%;
+  height: 40px;
+}
+
+.form-button.cancel {
+  background-color:rgb(240,240,240);
+  box-shadow: none;
+}
+
+.form-button.submit {
+  background-color: rgb(120,120,120);
+  color: white;
+}
