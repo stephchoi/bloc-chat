@@ -1,7 +1,7 @@
 (function() {
     function HomeCtrl(Room) {
-      this.rooms = Room;
-      this.messages = Room.currentRoom;
+      this.roomarray = Room.all;
+      this.room = Room;
     }
 
     angular

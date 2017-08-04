@@ -1,16 +1,18 @@
 <nav class="navbar">
   <h1>Bloc Chat</h1>
-  <div class="chatroom-button">New Chat</div>
-  <div class="chatroom-list" ng-repeat="room in home.rooms.all">
-    <a ng-click="home.rooms.setCurrentRoom(room)">{{room.$value}}</a>
+
+  <ng-include src="/templates/new-room-form.html"></ng-include>
+  
+  <div class="chatroom-list" ng-repeat="room in home.roomarray">
+    <a>{{room.$value}}</a>
   </div>
 </nav>
 
 <div class="chatroom-window">
-  <div class="message-window"><p>{{room.value}}</p></div>
+  <div class="message-window"></div>
   <div class="message-bar">
-    <input id="message-text" type="text" placeholder="Type Message Here"></div>
-    <button id="send-button"><p>send</p></div>
+    <input id="message-text" type="text" placeholder="Type Message Here">
+    <button id="send-button">Send</button>
   </div>
 
 </div>
