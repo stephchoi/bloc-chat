@@ -86,9 +86,8 @@ body {
   color: white;
 }
 
-
-
-/*.form {
+.form {
+  display: inline-block;
   position: fixed;
   top: 50px;
   left: 40%;
@@ -111,9 +110,13 @@ body {
   margin-bottom: 5px;
 }
 
-.form-button {
-  width: 49%;
+.modal-footer {
+  width: 250px;
   height: 40px;
+}
+
+.form-button {
+  width: 50%;
 }
 
 .form-button.cancel {
