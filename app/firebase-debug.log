@@ -34,3 +34,67 @@
 [info] i  hosting: Serving hosting files from: app/
 [info] +  hosting: Local server: http://localhost:5000
 
+[debug] [2017-08-05T00:12:16.095Z] ----------------------------------------------------------------------
+[debug] [2017-08-05T00:12:16.098Z] Command:      C:\Program Files\nodejs\node.exe C:\Users\Stephany\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-08-05T00:12:16.099Z] CLI Version:  3.9.1
+[debug] [2017-08-05T00:12:16.099Z] Platform:     win32
+[debug] [2017-08-05T00:12:16.099Z] Node Version: v6.11.1
+[debug] [2017-08-05T00:12:16.099Z] Time:         Fri Aug 04 2017 20:12:16 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-05T00:12:16.100Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-05T00:12:16.130Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-05T00:12:16.130Z] > authorizing via signed-in user
+[debug] [2017-08-05T00:12:16.133Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-05T00:12:16.133Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/t5DVG0mNpAV9mnm9V4yjFxAhDRrpAt1y-xUuRhDwHkSBsdp8FHdPgJGIhnKgoIZG',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Aug 04 2017 20:12:16 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-05T00:12:16.323Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-05T00:12:16.358Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bloc-chat-9a5b3  
+ Fri Aug 04 2017 20:12:16 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-05T00:12:17.061Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-05T00:12:17.063Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bloc-chat-9a5b3/tokens  
+ Fri Aug 04 2017 20:12:17 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-05T00:12:17.472Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Stephany\bloc\bloc-chat'...
+[info] 
+[debug] [2017-08-05T00:12:17.480Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bloc-chat-9a5b3  
+ Fri Aug 04 2017 20:12:17 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-05T00:12:17.790Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-05T00:12:17.792Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/198768518971/clients/_:getWebAppConfig  
+ Fri Aug 04 2017 20:12:17 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-05T00:12:18.200Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: app/
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2017-08-05T00:18:47.653Z] ----------------------------------------------------------------------
+[debug] [2017-08-05T00:18:47.665Z] Command:      C:\Program Files\nodejs\node.exe C:\Users\Stephany\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-08-05T00:18:47.666Z] CLI Version:  3.9.1
+[debug] [2017-08-05T00:18:47.666Z] Platform:     win32
+[debug] [2017-08-05T00:18:47.666Z] Node Version: v6.11.1
+[debug] [2017-08-05T00:18:47.668Z] Time:         Fri Aug 04 2017 20:18:47 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-05T00:18:47.668Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-05T00:18:47.730Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-05T00:18:47.731Z] > authorizing via signed-in user
+[debug] [2017-08-05T00:18:47.739Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bloc-chat-9a5b3  
+ Fri Aug 04 2017 20:18:47 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-05T00:18:49.031Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-05T00:18:49.034Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bloc-chat-9a5b3/tokens  
+ Fri Aug 04 2017 20:18:49 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-05T00:18:49.515Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Stephany\bloc\bloc-chat'...
+[info] 
+[debug] [2017-08-05T00:18:49.527Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bloc-chat-9a5b3  
+ Fri Aug 04 2017 20:18:49 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-05T00:18:49.814Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-05T00:18:49.815Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/198768518971/clients/_:getWebAppConfig  
+ Fri Aug 04 2017 20:18:49 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-08-05T00:18:50.143Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: app/
+[info] +  hosting: Local server: http://localhost:5000
+
