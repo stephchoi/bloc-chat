@@ -1,8 +1,8 @@
 <nav class="navbar">
   <h1>Bloc Chat</h1>
 
-  <ng-include src="/templates/new-room-form.html"></ng-include>
-  
+  <ng-include src="'/templates/room_modal.html'"></ng-include>
+
   <div class="chatroom-list" ng-repeat="room in home.roomarray">
     <a>{{room.$value}}</a>
   </div>

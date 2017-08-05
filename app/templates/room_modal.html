@@ -1,5 +1,6 @@
-<div class="form container" ng-controller="ModalCtrl as $ctrl">
-  <script type="text/ng-template" id="roomForm.html">
+<div class="container">
+  <script type="text/ng-template">
+    <div class="form">
       <h3>Create New Room</h3>
       <label for="new-room-name">Enter a room name:</label>
       <br>
@@ -9,6 +10,7 @@
         <button class="form-button cancel" ng-click="$ctrl.cancel()">Cancel</button>
         <button class="form-button submit" type="submit" ng-submit="$ctrl.ok()">Create Room</button>
       </div>
+    </div>
   </script>
 
   <button class= "chatroom-button" ng-click="$ctrl.open()">New Chat</button>
