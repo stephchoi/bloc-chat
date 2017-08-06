@@ -2,7 +2,7 @@
   <h1>Bloc Chat</h1>
 
   <ng-include src="'/templates/room_modal.html'"></ng-include>
-
+  <button class= "chatroom-button" ng-click="$ctrl.open()">New Chat</button>
   <div class="chatroom-list" ng-repeat="room in home.roomarray">
     <a>{{room.$value}}</a>
   </div>
