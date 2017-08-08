@@ -2,17 +2,21 @@
   function Message($firebaseArray) {
     var Message = {};
     var ref = firebase.database().ref().child("messages");
-    var messages = $firebaseArray(ref);
-    Message.currentRoom = null;
+    ref.orderByChild("roomId");
 
-    Message.getByRoomId = function(roomID) {
+    Message.currentRoom = null;
+    Message.currentMessages = [];
+
+    Message.getByRoomId = function(room) {
+      var id = room.$id;
         // Filter the messages by their room ID.
-        messages.orderByChild('roomId').equalTo('roomID');
-        Message.currentRoom = roomID;
+        var Messages = ref.orderByChild('roomId').equalTo(id);
+
+        Message.currentMessages = $firebaseArray(Messages);
+        Message.currentRoom = room;
     };
 
     return Message;
-    };
   }
 
   angular
