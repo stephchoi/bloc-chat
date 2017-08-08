@@ -20,8 +20,7 @@
     };
 
     //Adds new chatrooms to database
-    Room.add = function() {
-      var name = document.getElementById("new-room-name").value;
+    Room.add = function(name) {
       var room = createRoom(name);
       rooms.$add(room);
     };
