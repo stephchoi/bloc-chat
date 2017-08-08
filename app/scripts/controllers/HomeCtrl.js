@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl(Room, $uibModal) {
+    function HomeCtrl(Room, $uibModal, Message) {
       this.roomarray = Room.all;
       this.room = Room;
 
@@ -12,9 +12,12 @@
           controllerAs: '$ctrl'
         });
       };
+
+      //Changes the chatroom shown
+      this.messages = Message;
     }
 
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['Room','$uibModal', HomeCtrl]);
+        .controller('HomeCtrl', ['Room','$uibModal','Message', HomeCtrl]);
 })();

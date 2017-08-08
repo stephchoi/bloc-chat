@@ -3,12 +3,14 @@
 
   <button class= "chatroom-button" ng-click="home.open()">New Chat</button>
   <div class="chatroom-list" ng-repeat="room in home.roomarray">
-    <a>{{room.$value}}</a>
+    <a ng-click="home.messages.getByRoomId(room.$id)">{{room.$value}}</a>
   </div>
 </nav>
 
 <div class="chatroom-window">
-  <div class="message-window"></div>
+  <div class="message-window">
+    <div>{{home.messages.currentRoom}}</div>
+  </div>
   <div class="message-bar">
     <input id="message-text" type="text" placeholder="Type Message Here">
     <button id="send-button">Send</button>

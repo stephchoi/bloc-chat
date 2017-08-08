@@ -66,6 +66,8 @@ body {
   width: 75%;
 }
 
+/*Message Window styles*/
+
 /*Message Bar styles*/
 #send-button, #message-text {
   display: inline-block;
