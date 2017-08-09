@@ -47,6 +47,7 @@ body {
 
 .chatroom-list a {
   color: rgb(210,210,200);
+  text-decoration: none;
 }
 
 .chatroom-window {
@@ -88,6 +89,7 @@ body {
   color: white;
 }
 
+/*Modal Styles*/
 .form {
   display: inline-block;
   position: fixed;
@@ -129,4 +131,11 @@ body {
 .form-button.submit {
   background-color: rgb(120,120,120);
   color: white;
+}
+
+/*Styles for usesrname modal*/
+
+.username.submit {
+  width: 100%;
+  height: 40px;
 }
