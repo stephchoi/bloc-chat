@@ -107,8 +107,8 @@ body {
   color: rgb(60,60,60);
 }
 
-#new-room-name {
-  width: 250px;
+#new-room-name, #new-username {
+  width: 100%;
   height: 35px;
   font-size: 22px;
   margin-bottom: 5px;
