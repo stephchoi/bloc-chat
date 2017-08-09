@@ -1,8 +1,8 @@
-<div class="form">
+<form class="form" name="myform">
   <h3>Set a username</h3>
-  <label for="new-userName">This name will appear when you send messages</label>
+  <label for="new-username">This name will appear when you send messages</label>
   <br>
-  <input id="new-userName" type="text" ng-model="$user.newUserName" required>
+  <input id="new-userName" type="text" ng-model="$user.newUserName" ng-required="true"/>
   <br>
-  <button class="username form-button submit" type="button" ng-click="$user.setUserName()">Set username</button>
-</div>
+  <button class="username form-button submit" type="submit" ng-click="myform.$valid && $user.setUserName()">Set username</button>
+</form>
