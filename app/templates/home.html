@@ -12,10 +12,10 @@
   <div class="message-window" ng-repeat="message in home.messages.currentMessages">
     <h6>{{message.username}}</h6>
     <p>{{message.content}}</p>
-    <p>{{message.timeAt}}</p>
+    <h6>{{message.sentAt}}</h6>
   </div>
   <div class="message-bar">
-    <input id="message-text" type="text" placeholder="Type Message Here">
-    <button id="send-button">Send</button>
+    <input id="message-text" ng-model="home.newMessage" type="text" placeholder="Type Message Here">
+    <button id="send-button" ng-click="home.messages.send(home.newMessage)">Send</button>
   </div>
 </div>

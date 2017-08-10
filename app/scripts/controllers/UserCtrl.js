@@ -1,9 +1,9 @@
 (function(){
   function UserCtrl($uibModalInstance, $cookies){
     this.setUserName = function () {
-      var name = this.username;
+      var name = this.newUserName;
       //Stores the username input from modal into cookies
-      $cookies.put('currentUser','name');
+      $cookies.put('currentUser', name);
       $uibModalInstance.close(name);
     };
   }
