@@ -1,42 +1,43 @@
 <div class="container-fluid">
   <div class="row fill">
-    <nav class="navbar navbar-left col-md-3">
+    <nav class="navbar navbar-left sidenav col-sm-3">
       <div class="row">
-        <h1 class="navbar navbar-header center-align">Bloc Chat</h1>
-        <br>
+        <h1 class="navbar-header">Bloc Chat</h1>
         <button class= "btn btn-default navbar-btn" ng-click="home.open()">New Chat</button>
       </div>
-
-      <div class="chatroom-list" ng-repeat="room in home.roomarray">
-        <a href="#" ng-click="home.messages.getByRoomId(room)">{{room.$value}}</a>
+      <div class="sidebar-nav">
+        <ul ng-repeat="room in home.roomarray">
+          <li><a href="#" ng-click="home.messages.getByRoomId(room)">{{room.$value}}</a></li>
+        </ul>
       </div>
     </nav>
 
     <!--Chatroom section-->
-    <div class="col-md-9">
-      <div class="row-fluid panel">
+    <div class="col-sm-9 col-sm-push-3">
+      <div class="row-fluid">
         <h1>{{home.messages.currentRoom.$value}}</h1>
       </div>
     <!--Message WIndow-->
-      <div class="row clearfix">
+      <div class="row-fluid clearfix">
         <div class="message-window" ng-repeat="message in home.messages.currentMessages">
-          <div class="row">
-            <div class="col-sm-10 bold">
+          <div class="row-fluid clearfix">
+            <div class="col-sm-10">
               <h5>{{message.username}}</h5>
             </div>
-            <div class="col-sm-1">
+            <div class="col-sm-2">
               <h6>{{message.sentAt | timecode}}</h6>
             </div>
           </div>
-          <div class="row">
-            <p class="col-sm-10">{{message.content}}</p>
+
+          <div class="row-fluid clearfix">
+            <p class="message-content">{{message.content}}</p>
           </div>
         </div>
       </div>
     <!--Message Bar-->
-      <div class="row message-bar clearfix">
-        <input class="col-sm-10 center-align" ng-model="home.newMessage" type="text" placeholder="Type Message Here">
-        <button class="btn btn-default col-sm-1" ng-click="home.messages.send(home.newMessage)">Send</button>
+      <div class="row-fluid message-bar clearfix">
+        <input class="col-sm-11" ng-model="home.newMessage" type="text" placeholder="Type Message Here">
+        <button class="btn btn-default col-sm-1" ng-click="home.send()">Send</button>
       </div>
     </div>
   </div>

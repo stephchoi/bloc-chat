@@ -1,12 +1,12 @@
-<form>
-  <h3>Create New Room</h3>
-  <div class="form-group">
-    <label for="new-room-name">Enter a room name:</label>
-    <br>
-    <input id="new-room-name" class="form-control input-lg" type="text" ng-model="$ctrl.roomName" required>
-  </div>
-  <div class="row">
-    <button class="btn btn-default col-sm-3" ng-click="$ctrl.cancel()">Cancel</button>
-    <button class="btn btn-primary col-sm-3" type="button" ng-click="$ctrl.ok()">Create Room</button>
-  </div>
+<form class="container-fluid">
+    <h3 class="modal-header row-fluid">Create New Room</h3>
+    <div class="modal-body form-group row-fluid">
+      <label for="new-room-name">Enter a room name:</label>
+      <br>
+      <input id="new-room-name" class="input-lg" type="text" ng-model="$ctrl.roomName" required>
+    </div>
+    <div class="btn-group modal-footer row-fluid">
+      <button class="btn btn-default" ng-click="$ctrl.cancel()">Cancel</button>
+      <button class="btn" type="button" ng-click="$ctrl.ok()">Create Room</button>
+    </div>
 </form>

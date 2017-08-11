@@ -1,54 +1,81 @@
-* {
-  box-sizing: border-box;
-/*border: 2px solid red*/
+*{
+  margin: 0;
+  padding: 0;
+  box-style: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  min-height: 100%;
-}
-
-.navbar {
-  padding: 10px;
-  background-color: rgb(0,0,129);
+body, html{
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar h1 {
-  color: white;
-  display: inline-block;
+.sidenav {
+  overflow: hidden;
+  height: 100%;
+  background-color: #1f1f1f;
+  color: #fff;
+  position: fixed;
+  padding-left: 25px;
 }
 
-.chatroom-button {
-  position: relative;
-  left: 0.75rem;
-  bottom: 0.5rem;
-  display: inline-block;
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+  list-style: none;
 }
 
-.chatroom-list {
-  width: 100%;
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
 }
 
-.chatroom-list a {
-  font-size: 2rem;
-  color: rgb(210,210,200);
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
   text-decoration: none;
 }
 
-.chatroom-window .message-bar {
-  height: 1.5rem;
+.navbar-header{
+  line-height: 40px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.navbar-btn{
+  position: relative;
+  left: 1rem;
+  top: 2rem;
+}
+
+.message-content {
+  margin-left: 20px;
+}
+
+.message-window {
+  overflow: auto;
+  height: 80%;
+  padding-top: 10px;
+  display:block;
+}
+
+.message-bar {
   position: fixed;
   bottom: 0;
+  width: inherit;
 }
 
-.message-window, .message-bar {
-  padding-left: 20px;
+.navbar-header, .navbar-btn {
+  display: block;
 }
 
-.message-bar input {
-  margin-right: 5px;
-}
-
-.bold {
+.form-container{
+  padding: 15px;
+  width: 250px;
 }
