@@ -15,6 +15,14 @@
 
       //Changes the chatroom shown
       this.messages = Message;
+      this.send = function() {
+        Message.send(this.newMessage);
+        this.newMessage = null;
+      };
+      this.enter = function($event) {
+        Message.enter($event, this.newMessage);
+        this.newMessage = null;
+      };
     }
 
     angular

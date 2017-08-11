@@ -31,6 +31,14 @@
       allMessages.$add(message);
     };
 
+    Message.enter = function($event, newMessage) {
+      var key = $event.keyCode;
+      if(key === 13) {
+        Message.send(newMessage);
+      }
+      console.log(key);
+    };
+
     return Message;
   }
 
