@@ -5,35 +5,21 @@
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 100%;
   min-height: 100%;
-  padding-bottom: 200px;
 }
 
 .navbar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 25%;
-  height: 100%;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+  padding: 10px;
   background-color: rgb(0,0,129);
+  height: 100%;
 }
 
 .navbar h1 {
-  position: relative;
   color: white;
-  width: auto;
-  font-size: 2.25rem;
-  padding: 0.5rem;
   display: inline-block;
 }
 
 .chatroom-button {
-  background-color: rgb(200,200,200);
-  color: black;
-  padding: 0.5rem;
   position: relative;
   left: 0.75rem;
   bottom: 0.5rem;
@@ -42,100 +28,27 @@ body {
 
 .chatroom-list {
   width: 100%;
-  padding: 1rem;
 }
 
 .chatroom-list a {
+  font-size: 2rem;
   color: rgb(210,210,200);
   text-decoration: none;
 }
 
-.chatroom-window {
-  width: 75%;
-  height: 100%
-  position: fixed;
-  padding: 1rem;
-  float: right;
-}
-
 .chatroom-window .message-bar {
-  background-color: rgb(210,210,210);
-  height: 3rem;
+  height: 1.5rem;
   position: fixed;
   bottom: 0;
-  right: 0;
-  width: 75%;
 }
 
-/*Message Window styles*/
-
-/*Message Bar styles*/
-#send-button, #message-text {
-  display: inline-block;
-  height: inherit;
+.message-window, .message-bar {
+  padding-left: 20px;
 }
 
-#message-text {
-  width: 90%;
+.message-bar input {
+  margin-right: 5px;
 }
 
-#send-button {
-  background-color: rgb(0,0,90);
-  text-transform: uppercase;
-  width: 10%;
-  position: absolute;
-  bottom: 0;
-  right:0;
-  color: white;
-}
-
-/*Modal Styles*/
-.form {
-  display: inline-block;
-  position: fixed;
-  top: 50px;
-  left: 40%;
-  background-color: rgb(210,210,210);
-  color: rgb(110,110,110);
-  height: auto;
-  width: auto;
-  padding: 25px 40px 25px 40px;
-  z-index: 1;
-}
-
-.form h3 {
-  color: rgb(60,60,60);
-}
-
-#new-room-name, #new-username {
-  width: 100%;
-  height: 35px;
-  font-size: 22px;
-  margin-bottom: 5px;
-}
-
-.modal-footer {
-  width: 250px;
-  height: 40px;
-}
-
-.form-button {
-  width: 50%;
-}
-
-.form-button.cancel {
-  background-color:rgb(240,240,240);
-  box-shadow: none;
-}
-
-.form-button.submit {
-  background-color: rgb(120,120,120);
-  color: white;
-}
-
-/*Styles for usesrname modal*/
-
-.username.submit {
-  width: 100%;
-  height: 40px;
+.bold {
 }
