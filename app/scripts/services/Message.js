@@ -19,11 +19,12 @@
 
     Message.send = function(newMessage) {
       var username = $cookies.get('currentUser');
+      var timestamp = Math.floor(Date.now()/1000);
       //Create Message
       var message = {
         "content": newMessage,
         "roomId": Message.currentRoom.$id,
-        "sentAt": "8 Aug 2017 11:50:17 GMT-0500(EST)",
+        "sentAt": timestamp,
         "username": username
       }
       //Pushes message onto firebase
