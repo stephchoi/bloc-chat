@@ -5,7 +5,8 @@
     if(!currentUser || currentUser === ''){
       $uibModal.open({
         templateUrl: '/templates/user_modal.html',
-        controller: 'UserCtrl as $user'
+        controller: 'UserCtrl as $user',
+        backdrop: 'static'
       });
     }
   }

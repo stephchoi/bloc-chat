@@ -76,6 +76,5 @@ body, html{
 }
 
 .form-container{
-  padding: 15px;
-  width: 250px;
+  padding-bottom: 15px;
 }
