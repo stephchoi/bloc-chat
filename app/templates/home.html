@@ -1,11 +1,11 @@
 <div class="container-fluid">
   <div class="row fill">
     <nav class="navbar navbar-left sidenav col-sm-3">
-      <div class="row">
-        <h1 class="navbar-header">Bloc Chat</h1>
-        <button class= "btn btn-default navbar-btn" ng-click="home.open()">New Chat</button>
+      <div class="row-fluid clearfix">
+        <h1 class="navbar-header col-sm-7">Bloc Chat</h1>
+        <button class= "btn btn-default navbar-btn btn-lg col-sm-4" ng-click="home.open()">New Chat</button>
       </div>
-      <div class="sidebar-nav">
+      <div class="row sidebar-nav">
         <ul ng-repeat="room in home.roomarray">
           <li><a href="#" ng-click="home.messages.getByRoomId(room)">{{room.$value}}</a></li>
         </ul>
@@ -13,9 +13,9 @@
     </nav>
 
     <!--Chatroom section-->
-    <div class="col-sm-9 col-sm-push-3">
-      <div class="row-fluid">
-        <h1>{{home.messages.currentRoom.$value}}</h1>
+    <div class="col-sm-9 col-sm-push-3 chatroom container-fluid">
+      <div class="row-fluid page-header">
+        <h1 class="roomname">{{home.messages.currentRoom.$value}}</h1>
       </div>
     <!--Message WIndow-->
       <div class="row-fluid clearfix">
@@ -35,7 +35,7 @@
         </div>
       </div>
     <!--Message Bar-->
-      <div class="row-fluid message-bar clearfix">
+      <div class="row-fluid message-bar clearfix ">
         <input class="col-sm-11" ng-model="home.newMessage" type="text" placeholder="Type Message Here">
         <button class="btn btn-default col-sm-1" ng-click="home.send()">Send</button>
       </div>

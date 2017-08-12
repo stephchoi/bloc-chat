@@ -1,6 +1,4 @@
 *{
-  margin: 0;
-  padding: 0;
   box-style: border-box;
 }
 
@@ -44,37 +42,50 @@ body, html{
 
 .navbar-header{
   line-height: 40px;
-  text-align: center;
   font-size: 35px;
+  padding: 0;
 }
 
 .navbar-btn{
   position: relative;
-  left: 1rem;
-  top: 2rem;
+  top: 1rem;
+}
+
+.roomname{
+  margin-left: 10px;
 }
 
 .message-content {
-  margin-left: 20px;
+  padding-left: 15px;
+  padding-bottom: 10px;
 }
 
 .message-window {
-  overflow: auto;
+  overflow-y: auto;
   height: 80%;
-  padding-top: 10px;
+  padding: 10px;
   display:block;
+  margin: 0;
 }
 
 .message-bar {
   position: fixed;
+  padding-left: 3px;
   bottom: 0;
   width: inherit;
 }
 
-.navbar-header, .navbar-btn {
-  display: block;
+.message-bar button{
+  position: relative;
+  bottom: 7.5px;
 }
 
 .form-container{
   padding-bottom: 15px;
+}
+
+.chatroom,
+.chatroom.row-fluid {
+  padding: 0;
+  margin: 0;
 }
